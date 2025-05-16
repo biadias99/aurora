@@ -85,7 +85,7 @@
   }
 
   function edit (id) {
-    const found = activitiesStore.dayActivities.find(x => x.id === id);
+    const found = activitiesStore.monthlyActivities.find(x => x.id === id);
     const formattedDate = formatTimestampToDate(found.date);
 
     record.value = {
