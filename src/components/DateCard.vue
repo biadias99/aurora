@@ -1,6 +1,6 @@
 <template>
   <v-row>
-    <v-col class="text-h6">
+    <v-col class="text-h6" cols="8">
       {{ formatted }}
     </v-col>
   </v-row>

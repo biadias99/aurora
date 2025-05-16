@@ -9,24 +9,21 @@
       <Progress />
     </v-row>
 
-    <v-row>
-      <WeeklyCalendar />
-
-      <MonthlyCalendar />
-    </v-row>
+    <Calendar />
   </v-container>
 </template>
 
 <script setup>
   import { useActivityStore } from '../stores/activities';
-  import MonthlyCalendar from '../components/MonthlyCalendar.vue';
-  import WeeklyCalendar from '../components/WeeklyCalendar.vue';
+  import Calendar from '../components/Calendar.vue';
+  import { formatStartEndDate } from '../composables/formatStartEndDate';
 
   const activitiesStore = useActivityStore();
 
   onMounted(() => {
-    if (!activitiesStore.activities.length) {
-      activitiesStore.getActivities();
+    if (!activitiesStore.dayActivities.length) {
+      const date = formatStartEndDate(new Date());
+      activitiesStore.getDayActivities(date, true);
     }
   });
 

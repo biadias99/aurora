@@ -2,6 +2,7 @@
   <v-card>
     <v-app-bar :elevation="0" rounded>
       <v-img
+        alt="Logo Aurora"
         class="mx-2"
         contain
         max-height="80"
