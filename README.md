@@ -12,6 +12,10 @@ Baseado na ideia principal, decidi primeiramente criar um pequeno design system 
 
 <img src="https://github.com/user-attachments/assets/6148c3d7-88f0-47f0-8142-e00b4e1c8a21" width="800" />
 
+## Tecnologias
+
+Com relação às tecnologias, decidi escolher as que me são mais confortáveis: Vue.js com Pinia e Vuetify. Pensei, inicialmente, em criar uma API para o back-end, mas optei por seguir uma abordagem mais simples, utilizando o Firestore do Firebase. Além disso, como pacote adicional, utilizei o VCalendar.
+
 ## ✨ Features
 
 Pensando em um MVP, decidi fazer algo bem simples. A ideia principal é que a pessoa possa visualizar suas atividades diárias, semanais e mensais. Além disso, é possível criar novas tarefas, editar e excluir. Eu acredito que poderiam ser adicionadas diversas funcionalidades, mas, devido ao tempo, decidi manter mais simples.
